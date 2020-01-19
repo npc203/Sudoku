@@ -30,6 +30,18 @@ for i in arr:
 pickle.dump(arr,open('box.button','wb'))
 '''
 
+'''
+try:
+    w=gw.getWindowsWithTitle('Remote Control - Redmi Go')[0]
+    win=(w.topleft.x,w.topleft.y)
+except IndexError:
+    print('No window found')
+    exit()
+'''
+#load data
+coords=pickle.load(open('box.button','rb'))
+other=pickle.load(open('otherdict.button','rb'))
+
 
 
 def convert(string):
@@ -47,17 +59,10 @@ def move(num,pos,win):
     pyautogui.click(pos[0],pos[1],duration=0.1) 
 
     
-#load data
-coords=pickle.load(open('box.button','rb'))
-other=pickle.load(open('otherdict.button','rb'))
+
 
 #move(4,(3,4),(0,0))
-try:
-    w=gw.getWindowsWithTitle('Remote Control - Redmi Go')[0]
-    win=(w.topleft.x,w.topleft.y)
-except IndexError:
-    print('No window found')
-    exit()
+
 
 
 
