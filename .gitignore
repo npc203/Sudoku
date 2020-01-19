@@ -1,0 +1,7 @@
+
+training/ssd_mobilenet_v1_coco_2017_11_17/checkpoint
+training/ssd_mobilenet_v1_coco_2017_11_17/frozen_inference_graph.pb
+training/ssd_mobilenet_v1_coco_2017_11_17/model.ckpt.data-00000-of-00001
+training/ssd_mobilenet_v1_coco_2017_11_17/model.ckpt.index
+training/ssd_mobilenet_v1_coco_2017_11_17/model.ckpt.meta
+training/ssd_mobilenet_v1_coco_2017_11_17/saved_model/saved_model.pb
