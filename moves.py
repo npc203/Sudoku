@@ -10,13 +10,13 @@ w=gw.getWindowsWithTitle('Remote Control - Redmi Go')[0]
 print(w.topleft.x,w.topleft.y)
 pyautogui.moveTo(w.topleft.x,w.topleft.y, duration = 0)
 pyautogui.moveTo(1169,617, duration = 0)
+#The place where i record the coords is (790 107)
 '''
 
 
-def move(string):
-    """Function takes tuple strings as input and moves to the approriate position"""
-    cod=(int(i) for i in string.replace('(','').replace(')','').split(',')])
-    pyautogui.moveTo(cod[0],cod[1], duration = 0.01)
+def convert(string):
+    """Function takes tuple strings as input and returns tuples"""
+    return tuple(int(i) for i in string.replace('(','').replace(')','').split(','))
     
 
 
@@ -28,10 +28,15 @@ op=0
 for i in range(9):
     tmp=[]
     for j in range(9):
-       tmp.append(lines[op].replace('\n',''))
+       tmp.append(convert(lines[op].replace('\n','')))
        op+=1
     arr.append(tmp)
-
+w=gw.getWindowsWithTitle('Remote Control - Redmi Go')[0]
+with open('process.txt','w+') as f:
+    for i in arr:
+        for j in i:
+            print(j[0],j[1])
+            f.write('('+str(j[0]-w.topleft.x)+','+str(j[1]-w.topleft.y)+')\n')
 
 
 
