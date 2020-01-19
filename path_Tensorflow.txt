@@ -8,3 +8,8 @@ python train.py --logtostderr --train_dir=training/ --pipeline_config_path=train
 
 
 E:/sam/tensorflow/models/research/object_detection/faster_rcnn_nas_coco_2018_01_28/model.ckpt
+
+
+python train.py --logtostderr --train_dir=training/ --pipeline_config_path=pipeline.config
+
+tensorboard --logdir=training/ --host localhost --port 8088
