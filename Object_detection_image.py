@@ -96,7 +96,7 @@ image_expanded = np.expand_dims(image, axis=0)
 (boxes, scores, classes, num) = sess.run(
     [detection_boxes, detection_scores, detection_classes, num_detections],
     feed_dict={image_tensor: image_expanded})
-print(len(boxes),scores, classes)
+print(boxes)
 
 # Draw the results of the detection (aka 'visulaize the results')
 
