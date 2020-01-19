@@ -1,7 +1,7 @@
 import pyautogui
 import pygetwindow as gw
 
-
+#
 #pyautogui.moveTo(x,y, duration = 0)
 #pyautogui.click(x,y) 
 
@@ -22,7 +22,7 @@ def convert(string):
 
 #Parsing
 arr=[]
-with open('coordinates.txt','r') as f:
+with open('process.txt','r') as f:
     lines=f.readlines()
 op=0
 for i in range(9):
@@ -32,12 +32,14 @@ for i in range(9):
        op+=1
     arr.append(tmp)
 w=gw.getWindowsWithTitle('Remote Control - Redmi Go')[0]
+
+'''
 with open('process.txt','w+') as f:
     for i in arr:
         for j in i:
             print(j[0],j[1])
             f.write('('+str(j[0]-w.topleft.x)+','+str(j[1]-w.topleft.y)+')\n')
-
+'''
 
 
 
