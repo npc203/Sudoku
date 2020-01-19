@@ -16,11 +16,11 @@ def valid(bo,num,pos):
 	return True
 	
 def empty(bo):
-	for i in range(9):
-		for j in range(9):
-			if bo[i][j]==0:
-				return (i,j)
-	return None
+   for i in range(9):
+      for j in range(9):
+         if bo[i][j]==0:
+              return (i,j)
+   return None
 				
 def solve(bo):
         global opt
