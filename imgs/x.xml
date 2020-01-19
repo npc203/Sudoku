@@ -1,0 +1,26 @@
+<annotation>
+	<folder>imgs</folder>
+	<filename>x.png</filename>
+	<path>C:\Users\Sam\Desktop\Sudoku\imgs\x.png</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>1024</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>XA</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1059</xmin>
+			<ymin>690</ymin>
+			<xmax>1128</xmax>
+			<ymax>755</ymax>
+		</bndbox>
+	</object>
+</annotation>
