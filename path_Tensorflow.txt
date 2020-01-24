@@ -1,6 +1,7 @@
 E:\sam\tensorflow\models\research\slim
 
-set PYTHONPATH=G:\tensorflow\models;E:\sam\tensorflow\models\research;G:\tensorflow\models\research\slim
+set PYTHONPATH=G:\Tensorflow\models;G:\Tensorflow\models\research;G:\Tensorflow\models\research\slim
+				
 
 
 

@@ -25,11 +25,13 @@ def detector(box):
    for i in data.keys():
       #print('detector/'+i)
       for j in data[i][0]:
-         print(PATH+j)
+         #print(PATH+j)
          k=pyautogui.locateOnScreen(PATH+j,grayscale=True, confidence=.5, region=box)
          if k:
-            #pyautogui.click(pyautogui.center(k))
+            pyautogui.moveTo(pyautogui.center(k))
+            time.sleep(2)
             data[i][1].append(k)
+            print(k)
       print('-------------------------------------------------------------')
    return data
 

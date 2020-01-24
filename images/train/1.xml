@@ -1,7 +1,7 @@
 <annotation>
-	<folder>imgs</folder>
+	<folder>train</folder>
 	<filename>1.png</filename>
-	<path>C:\Users\Sam\Desktop\Sudoku\imgs\1.png</path>
+	<path>C:/Users/Sam/Desktop/Sudoku/images/train/1.png</path>
 	<source>
 		<database>Unknown</database>
 	</source>
@@ -165,6 +165,18 @@
 			<ymin>727</ymin>
 			<xmax>648</xmax>
 			<ymax>793</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>empty</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>318</xmin>
+			<ymin>248</ymin>
+			<xmax>363</xmax>
+			<ymax>290</ymax>
 		</bndbox>
 	</object>
 </annotation>

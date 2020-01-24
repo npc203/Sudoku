@@ -51,6 +51,9 @@ from object_detection.builders import graph_rewriter_builder
 from object_detection.builders import model_builder
 from object_detection.legacy import trainer
 from object_detection.utils import config_util
+import sys
+#print(sys.path)
+sys.path.append("E:/sam/python stuff/Lib/site-packages/tensorflow/contrib/slim")
 
 tf.logging.set_verbosity(tf.logging.INFO)
 

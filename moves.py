@@ -1,5 +1,4 @@
 import pyautogui
-import pygetwindow as gw
 import pickle
 
 #pyautogui.moveTo(x,y, duration = 0)
