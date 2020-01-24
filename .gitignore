@@ -1,3 +1,5 @@
 inference_graph/
 training/
 ssd_mobilenet_v1_coco_2017_11_17/
+images/detector
+
